@@ -1,0 +1,27 @@
+{
+  "name": "q5qsc",
+  "version": "0.0.0",
+  "description": null,
+  "main": "index.php",
+  "scripts": {
+    "start": "serve",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Milligan-Information-Systems/Athletic-Department-Travel-System.git"
+  },
+  "author": "Nathan Hastings",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/Milligan-Information-Systems/Athletic-Department-Travel-System/issues"
+  },
+  "homepage": "https://github.com/Milligan-Information-Systems/Athletic-Department-Travel-System#readme",
+  "devDependencies": {
+    "react-scripts": "1.0.0",
+    "serve": "^11.2.0"
+  },
+  "dependencies": {}
+}

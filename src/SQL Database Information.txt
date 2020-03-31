@@ -1,0 +1,38 @@
+Creating Login System Table:
+
+CREATE TABLE users (
+	idUsers int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+	uidUsers TINYTEXT NOT NULL,
+	emailUsers TINYTEXT NOT NULL,
+	pwdUsers LONGTEXT NOT NULL
+);
+
+Creating Pwd Reset Token Table:
+
+CREATE TABLE pwdReset (
+	pwdResetId int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	pwdResetEmail TEXT NOT NULL,
+	pwdResetSelector TEXT NOT NULL,
+	pwdResetToken LONGTEXT NOT NULL,
+	pwdResetExpires TEXT NOT NULL
+);
+
+Create Account Verification Table:
+
+CREATE TABLE VerifyAccount (
+	AccountVerificationID int(11) PRIMARY KEY AUTO_INCREMENT NOT NULL,
+	AccountVerificationEmail TEXT NOT NULL,
+	VerificationSelector TEXT NOT NULL,
+	VerificationToken LONGTEXT NOT NULL
+);
+
+INSERT INTO athletedatabase (fname, lname, sport, date_excused, departure_time) VALUES ('', '', '', '0000-00-00', '00:00:00'); 
+
+CREATE TABLE athletedatabase (
+    travelID int(11) AUTO_INCREMENT PRIMARY KEY NOT NULL,
+    fname varchar(255),
+    lname varchar(255),
+    sport varchar(255),
+    date_excused date,
+    departure_time time
+);
